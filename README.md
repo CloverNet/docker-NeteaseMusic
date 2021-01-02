@@ -1,5 +1,5 @@
 # docker-NeteaseMusic
-基于 [jsososo/NeteaseMusic](https://github.com/jsososo/NeteaseMusic)。
+感谢 [jsososo/NeteaseMusic](https://github.com/jsososo/NeteaseMusic)!
 
 ## 配置QQ音乐绿钻Cookie (QQ登录关键步骤)
 
