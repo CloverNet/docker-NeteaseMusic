@@ -22,13 +22,13 @@
 
 ```
 
-# docker 
+## docker 
 
 ```
     docker run -it -p 80:80 --name=music clovernet/neteasemusic:latest
 ```
   
-# nginx 反向代理
+## nginx 反向代理
 
 ```
     listen       80;
