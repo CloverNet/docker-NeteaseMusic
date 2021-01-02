@@ -32,7 +32,7 @@
 
 ```
     listen       80;
-    server_name  localhost;
+    server_name  localhost; # 可换为你的域名
 
     location / {
         root   /usr/share/nginx/html;
