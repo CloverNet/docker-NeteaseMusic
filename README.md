@@ -5,7 +5,7 @@
 
 1.通过Api接口设置
 
-[传送们](https://github.com/jsososo/QQMusicApi#%E8%AE%BE%E7%BD%AE%E7%94%A8%E6%88%B7Cookie)
+[传送门](https://github.com/jsososo/QQMusicApi#%E8%AE%BE%E7%BD%AE%E7%94%A8%E6%88%B7Cookie)
 
 
 2.配置cookie文件 `apiQ/data/cookie.json`，因为没有绿钻，就偷懒从原作者的音乐站点获取了。
