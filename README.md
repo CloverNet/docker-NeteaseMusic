@@ -18,7 +18,7 @@
 
 ```
     # 从cookie同步QQ号
-    sed -i 's/'1234567'/'$(cat data/cookie.json | jq .uin)'/g' apiQ/bin/config.js
+    sed -i 's/'1234567'/'$(cat apiQ/data/cookie.json | jq .uin)'/g' apiQ/bin/config.js
 
 ```
 
