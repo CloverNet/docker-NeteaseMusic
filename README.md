@@ -28,3 +28,35 @@
     docker run -it -p 80:80 --name=music clovernet/neteasemusic:latest
 ```
   
+# nginx 反向代理
+
+```
+    listen       80;
+    server_name  localhost;
+
+    location / {
+        root   /usr/share/nginx/html;
+        index  index.html index.htm;
+    }
+
+    location /api/ {
+        proxy_set_header  Host  $http_host;
+        proxy_set_header  X-Real-IP  $remote_addr;
+        proxy_set_header  X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass  http://localhost:3000/;
+    }
+    
+    location /apiMix/ {
+        proxy_set_header  Host  $http_host;
+        proxy_set_header  X-Real-IP  $remote_addr;
+        proxy_set_header  X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass  http://localhost:3600/;
+    }
+    
+    location /apiQ/ {
+        proxy_set_header  Host  $http_host;
+        proxy_set_header  X-Real-IP  $remote_addr;
+        proxy_set_header  X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass  http://localhost:3300/;
+    }
+```
